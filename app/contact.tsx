@@ -27,24 +27,26 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="px-8 flex-col flex gap-8 h-1/2 md:w-9/12">
+    <section
+      id="contact"
+      className="flex flex-col h-screen md:w-9/12 justify-center"
+    >
       <div className="flex flex-col gap-8">
-        <h2 className="text-2xl font-bold">Contact Me</h2>
-        <div className="grid grid-rows-3 grid-cols-none md:grid-cols-3 md:grid-rows-1 gap-8">
+        <h2 className="text-4xl font-bold">Contact Me</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {socialConnections.map((connection) => (
-            <div
-              key={connection.id}
-              className="max-w-sm border rounded-lg shadow bg-[#4a0a93] border-[#4a0a93] hover:bg-[#4a0a93]/50 p-4"
-            >
-              <a href={connection.link} className="mb-3">
-                <div className="flex gap-8 flex-col">
-                  <div className="text-3xl">{connection.icon}</div>
+            <a key={connection.id} href={connection.link} className="mb-3">
+              <div className="max-w-sm md:aspect-square grid md:place-items-center md:text-center border rounded-lg shadow bg-[#4a0a93] border-[#4a0a93] hover:bg-[#4a0a93]/50">
+                <div className="flex flex-col p-4 gap-8">
+                  <div className="text-3xl lg:text-5xl md:place-self-center">
+                    {connection.icon}
+                  </div>
                   <p className="text-lg tracking-tight text-gray-900 dark:text-white">
                     {connection.description}
                   </p>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
           ))}
         </div>
       </div>

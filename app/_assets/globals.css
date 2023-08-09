@@ -18,10 +18,9 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: url(./ba4.png);
+  background: url(../../public/bg-mobile.png);
 }
 
-/*Animations*/
 @keyframes animate {
   0% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
