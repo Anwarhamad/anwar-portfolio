@@ -1,7 +1,7 @@
 import { FaLinkedinIn, FaBehance } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
 
-const Contact = () => {
+function Contact() {
   const socialConnections = [
     {
       id: 1,
@@ -29,16 +29,16 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="flex flex-col h-screen md:w-9/12 justify-center"
+      className="flex h-screen flex-col justify-center md:w-9/12"
     >
       <div className="flex flex-col gap-8">
         <h2 className="text-4xl font-bold">Contact Me</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {socialConnections.map((connection) => (
             <a key={connection.id} href={connection.link} className="mb-3">
-              <div className="max-w-sm md:aspect-square grid md:place-items-center md:text-center border rounded-lg shadow bg-[#4a0a93] border-[#4a0a93] hover:bg-[#4a0a93]/50">
-                <div className="flex flex-col p-4 gap-8">
-                  <div className="text-3xl lg:text-5xl md:place-self-center">
+              <div className="grid max-w-sm rounded-lg border border-[#4a0a93] bg-[#4a0a93] shadow hover:bg-[#4a0a93]/50 md:aspect-square md:place-items-center md:text-center">
+                <div className="flex flex-col gap-8 p-4">
+                  <div className="text-3xl md:place-self-center lg:text-5xl">
                     {connection.icon}
                   </div>
                   <p className="text-lg tracking-tight text-gray-900 dark:text-white">
@@ -52,6 +52,6 @@ const Contact = () => {
       </div>
     </section>
   );
-};
+}
 
 export default Contact;

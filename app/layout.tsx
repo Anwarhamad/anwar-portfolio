@@ -1,11 +1,11 @@
+import type { Metadata } from "next";
+import { Poppins } from "next/font/google";
 import { ReactNode } from "react";
 
 import "./_assets/globals.css";
-import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
 
 const poppins = Poppins({
-  weight: ["300", "500", "700"],
+  weight: ["400", "700", "900"],
   subsets: ["latin-ext"],
 });
 
