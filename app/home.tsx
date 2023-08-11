@@ -4,9 +4,9 @@ import me from "@/app/_assets/me.jpg";
 function Home() {
   return (
     <section id="home" className="w-9/12">
-      <div className="flex flex-col items-center h-screen text-justify justify-evenly lg:justify-between lg:flex-row-reverse">
-        <div className="aspect-square w-8/12 lg:w-4/12 overflow-hidden bg-cover rounded-full">
-          <Image src={me} alt="me" />
+      <div className="flex flex-col items-center h-screen text-justify justify-evenly xl:justify-between xl:flex-row-reverse">
+        <div className="aspect-square w-8/12 md:w-6/12 xl:w-4/12 overflow-hidden bg-cover rounded-full img-animation">
+          <Image src={me} alt="me" priority={true} />
         </div>
         <div className="flex flex-col gap-3">
           <div className="text-center lg:text-left">
