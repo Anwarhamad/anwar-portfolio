@@ -29,7 +29,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="flex h-screen flex-col justify-center md:w-9/12"
+      className="flex h-max min-h-screen w-10/12 flex-col justify-center"
     >
       <div className="flex flex-col gap-8">
         <h2 className="text-4xl font-bold">Contact Me</h2>
