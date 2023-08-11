@@ -1,6 +1,6 @@
-import Contact from "@/app/contact";
-import Home from "@/app/home";
-import Projects from "@/app/projects";
+import Contact from "@/app/_contact/page";
+import Home from "@/app/_home/page";
+import Projects from "@/app/_projects/page";
 
 export default function Main() {
   return (

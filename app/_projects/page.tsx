@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { MdArrowForward } from "react-icons/md";
 
-import projectAnwarLogo from "./_assets/project-anwar-ui-logo.jpeg";
-import projectGigWebsite from "./_assets/project-gig-website.jpeg";
-import projectSyraBranding from "./_assets/project-syra-branding.jpeg";
+import projectAnwarLogo from "../_assets/project-anwar-ui-logo.jpeg";
+import projectGigWebsite from "../_assets/project-gig-website.jpeg";
+import projectSyraBranding from "../_assets/project-syra-branding.jpeg";
 
 const projectData = [
   {

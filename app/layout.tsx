@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { ReactNode } from "react";
 
+import NavigationBar from "@/app/_components/NavigationBar";
+
 import "./_assets/globals.css";
 
 const poppins = Poppins({
@@ -17,7 +19,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>
+        <NavigationBar />
+        {children}
+      </body>
     </html>
   );
 }
