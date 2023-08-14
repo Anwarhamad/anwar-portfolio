@@ -50,7 +50,7 @@ function Projects() {
             </a>
             <div className="p-5">
               <a href={link}>
-                <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 text-white">
                   {title}
                 </h5>
               </a>
